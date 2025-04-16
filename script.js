@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function(){
-  // Enable simple dropdown interaction on hover
+  // This script can be used for any JS interactions if you decide to add more later.
   var dropdowns = document.querySelectorAll('.dropdown');
   
   dropdowns.forEach(function(dropdown) {
