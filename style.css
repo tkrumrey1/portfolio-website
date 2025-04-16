@@ -10,21 +10,21 @@ body {
 /* Header styling */
 header {
   background-color: #000;    /* Black header */
-  padding: 20px;
-  border-bottom: 2px solid #444;
+  padding-bottom: 20px;
 }
 
 /* Navigation styles */
 nav ul {
   list-style-type: none;
-  padding: 0;
+  padding: 10px 20px;
   margin: 0;
   display: flex;
+  justify-content: center;
 }
 
 nav ul li {
   position: relative;
-  margin-right: 20px;
+  margin: 0 10px;
 }
 
 nav ul li a {
@@ -59,41 +59,42 @@ nav ul li a:hover {
   background-color: #666;
 }
 
-/* Enable dropdown interaction on hover via JS (or you can use CSS only) */
+/* Enable dropdown interaction on hover */
 .dropdown:hover .dropdown-content {
   display: block;
 }
 
-/* Hero section for name and welcome message */
+/* Hero section banner */
 .hero {
   text-align: center;
-  padding: 40px 0;
-  border: 1px solid #444;
-  border-radius: 8px;
-  margin-top: 20px;
+  padding: 60px 20px;
   background-color: #222;
+  border-bottom: 2px solid #444;
+  border-radius: 0 0 8px 8px;
 }
 
 .hero h1 {
   margin: 0;
-  font-size: 2.5em;
+  font-size: 3em;
 }
 
 .hero p {
   margin: 10px 0 0;
-  font-size: 1.2em;
+  font-size: 1.5em;
 }
 
-/* Main content columns */
+/* Main content columns arranged side by side */
 .columns {
   display: flex;
   justify-content: space-around;
-  padding: 20px;
+  align-items: flex-start;
+  padding: 30px 20px;
+  gap: 20px;
 }
 
 .column {
   flex: 1;
-  margin: 10px;
+  max-width: 30%;
   padding: 20px;
   border: 1px solid #444;
   border-radius: 8px;
@@ -101,9 +102,11 @@ nav ul li a:hover {
   text-align: center;
 }
 
+/* Column title link styling */
 .column h2 a {
   color: #d3d3d3;
   text-decoration: none;
+  font-size: 1.8em;
 }
 
 .column h2 a:hover {
@@ -113,7 +116,7 @@ nav ul li a:hover {
 /* Project button styling */
 .project-button {
   display: block;
-  margin: 10px auto;
+  margin: 15px auto;
   padding: 20px;
   width: 80%;
   text-align: center;
@@ -152,7 +155,7 @@ nav ul li a:hover {
   background-image: url('color-photography.jpg'); /* Replace with your color image */
 }
 
-/* General rounding for other components */
+/* Apply consistent rounded corners to these elements */
 nav, .hero, .columns, .project-button, .column {
   border-radius: 8px;
 }
