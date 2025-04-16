@@ -11,29 +11,56 @@
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="contact.html">Contact</a></li>
-        <!-- Category dropdown link -->
+        <!-- Example dropdowns for category navigation -->
+        <li class="dropdown">
+          <a href="engineering.html" class="dropbtn">Engineering</a>
+          <div class="dropdown-content">
+            <a href="project_engineering1.html">Project 1</a>
+            <a href="project_engineering2.html">Project 2</a>
+          </div>
+        </li>
+        <li class="dropdown">
+          <a href="personal.html" class="dropbtn">Personal Projects</a>
+          <div class="dropdown-content">
+            <a href="project_personal1.html">Project 1</a>
+            <a href="project_personal2.html">Project 2</a>
+          </div>
+        </li>
         <li class="dropdown">
           <a href="photography.html" class="dropbtn">Photography</a>
           <div class="dropdown-content">
-            <a href="project1.html">Project 1</a>
-            <a href="project2.html">Project 2</a>
+            <a href="project_photo1.html">Project 1</a>
+            <a href="project_photo2.html">Project 2</a>
           </div>
         </li>
-        <!-- Add more categories similarly -->
       </ul>
     </nav>
+    <div class="hero">
+      <h1>My Portfolio</h1>
+      <p>Welcome to my website</p>
+    </div>
   </header>
   <main>
-    <h1>Welcome to My Portfolio</h1>
-    <section>
-      <h2>Photography</h2>
-      <ul>
-        <li><a href="photography.html">Photography Overview</a></li>
-        <li><a href="project1.html">Project 1</a></li>
-        <li><a href="project2.html">Project 2</a></li>
-      </ul>
-    </section>
-    <!-- You can add other categories or additional sections here -->
+    <div class="columns">
+      <!-- Engineering Column -->
+      <div class="column">
+        <h2><a href="engineering.html">Engineering</a></h2>
+        <a href="project_engineering1.html" class="project-button engineering">Project 1</a>
+        <a href="project_engineering2.html" class="project-button engineering">Project 2</a>
+      </div>
+      <!-- Personal Projects Column -->
+      <div class="column">
+        <h2><a href="personal.html">Personal Projects</a></h2>
+        <a href="project_personal1.html" class="project-button personal">Project 1</a>
+        <a href="project_personal2.html" class="project-button personal">Project 2</a>
+      </div>
+      <!-- Photography Column -->
+      <div class="column">
+        <h2><a href="photography.html">Photography</a></h2>
+        <a href="project_photo1.html" class="project-button photography">Project 1</a>
+        <a href="project_photo2.html" class="project-button photography">Project 2</a>
+      </div>
+    </div>
   </main>
   <script src="script.js"></script>
 </body>
