@@ -29,7 +29,7 @@ nav ul li a:hover {
   background-color: #222;
 }
 
-/* Dropdown content */
+/* Dropdown content (vertical stack) */
 .dropdown-content {
   display: none;
   position: absolute;
@@ -40,6 +40,7 @@ nav ul li a:hover {
   border-radius: 6px;
   min-width: 140px;
   z-index: 10;
+  flex-direction: column;
 }
 .dropdown-content a {
   display: block;
@@ -50,8 +51,9 @@ nav ul li a:hover {
 .dropdown-content a:hover {
   background-color: #444;
 }
+/* Show on hover */
 .dropdown:hover .dropdown-content {
-  display: block;
+  display: flex;
 }
 
 /* Hero banner */
@@ -80,18 +82,17 @@ nav ul li a:hover {
 /* Columns container */
 .columns {
   display: flex;
-  /* allow columns to shrink/grow */
   flex-wrap: nowrap;
 }
 
 /* Individual column */
 .column {
-  flex: 1;                     /* equal share */
+  flex: 1;
   padding: 0 20px;
   text-align: center;
 }
 .column + .column {
-  border-left: 1px solid #444; /* vertical line between columns */
+  border-left: 1px solid #444; /* vertical separator */
 }
 
 /* Column titles */
@@ -103,13 +104,13 @@ nav ul li a:hover {
 /* Project buttons */
 .project-button {
   display: block;
-  width: 80%;                  /* relative width */
-  aspect-ratio: 4 / 3;         /* enforce 4:3 ratio */
+  width: 80%;
+  aspect-ratio: 4 / 3;
   margin: 16px auto;
-  background-color: #444;      /* gray */
+  background-color: #444;
   color: #fff;
   border: none;
-  border-radius: 8px;          /* rounded corners */
+  border-radius: 8px;
   font-size: 1em;
   cursor: pointer;
   transition: background-color 0.2s ease;
