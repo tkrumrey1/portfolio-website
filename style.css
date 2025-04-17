@@ -29,12 +29,18 @@ nav ul li a:hover {
   background-color: #222;
 }
 
-/* Dropdown content (vertical stack) */
+/* Dropdown container stays the same */
+.dropdown {
+  position: relative;
+}
+
+/* Dropdown content */
 .dropdown-content {
   display: none;
   position: absolute;
-  top: 100%;
+  top: 100%;             /* start at bottom of .dropdown (i.e. link’s box) */
   left: 0;
+  margin-top: 6px;       /* offset by the link’s bottom padding */
   background-color: #222;
   border: 1px solid #444;
   border-radius: 6px;
@@ -42,6 +48,8 @@ nav ul li a:hover {
   z-index: 10;
   flex-direction: column;
 }
+
+/* Link items */
 .dropdown-content a {
   display: block;
   padding: 8px 12px;
@@ -51,10 +59,12 @@ nav ul li a:hover {
 .dropdown-content a:hover {
   background-color: #444;
 }
+
 /* Show on hover */
 .dropdown:hover .dropdown-content {
   display: flex;
 }
+
 
 /* Hero banner */
 .hero {
