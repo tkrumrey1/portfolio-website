@@ -1,69 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=1000" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio - Home</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
 
-  <div class="page-container">
-    <header>
-      <h1>Name</h1>
-      <h2>Subtitle</h2>
-      <nav>
-        <ul class="nav-menu">
-          <li><a href="index.html">Home</a></li>
-          <li class="dropdown">
-            <a href="#">Internships</a>
-            <ul class="dropdown-content">
-              <li><a href="tarlow-design.html">Tarlow Design</a></li>
-              <li><a href="sigma-engineering.html">Sigma Engineering</a></li>
-            </ul>
-          </li>
-          <li class="dropdown">
-            <a href="#">Rocketry</a>
-            <ul class="dropdown-content">
-              <li><a href="halya.html">Halya</a></li>
-            </ul>
-          </li>
-          <li class="dropdown">
-            <a href="#">Projects</a>
-            <ul class="dropdown-content">
-              <li><a href="portfolio-website.html">Portfolio Website</a></li>
-              <li><a href="drone.html">Drone</a></li>
-              <li><a href="computer.html">Computer</a></li>
-              <li><a href="sumo-robot.html">Sumo Robot</a></li>
-            </ul>
-          </li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
-      <hr class="section-divider" />
-    </header>
+<!-- Header will be injected here -->
+<div id="header-container"></div>
 
-    <main>
-      <div class="columns">
-        <div class="column">
-          <h3>Internships</h3>
-          <a href="tarlow-design.html" class="project-button" style="background-image: url('images/tarlow.jpg')">Tarlow Design</a>
-          <a href="sigma-engineering.html" class="project-button" style="background-image: url('images/sigma.jpg')">Sigma Engineering</a>
-        </div>
-        <div class="column">
-          <h3>Rocketry</h3>
-          <a href="halya.html" class="project-button" style="background-image: url('images/halya.jpg')">Halya</a>
-        </div>
-        <div class="column">
-          <h3>Projects</h3>
-          <a href="portfolio-website.html" class="project-button" style="background-image: url('images/portfolio.jpg')">Portfolio Website</a>
-          <a href="drone.html" class="project-button" style="background-image: url('images/drone.jpg')">Drone</a>
-          <a href="computer.html" class="project-button" style="background-image: url('images/computer.jpg')">Computer</a>
-          <a href="sumo-robot.html" class="project-button" style="background-image: url('images/sumo.jpg')">Sumo Robot</a>
-        </div>
-      </div>
-    </main>
+<!-- Hero Section -->
+<div class="hero">
+  <h1>Trevor Krumrey</h1>
+  <p class="subtitle">Aerospace Engineering Student at UCSD</p>
+  <p class="subsubtitle">Experience: Rocketry, Structures, Machining, Composites, Electromechanical System Design</p>
+</div>
+
+
+  <!-- Divider Line -->
+  <div class="divider"></div>
+
+<!-- Columns Section -->
+<div class="columns">
+  <!-- Internships Column -->
+  <div class="column">
+    <h2>Internships</h2>
+    <a href="tarlow-design.html" class="project-button" style="background-image: url('project1.jpg');">
+      Tarlow Design
+    </a>
+    <a href="sigma-engineering.html" class="project-button" style="background-image: url('images/sigma-engineering.jpg');">
+      Sigma Engineering
+    </a>
   </div>
+
+  <!-- Rocketry Column -->
+  <div class="column">
+    <h2>Rocketry</h2>
+    <a href="halya.html" class="project-button" style="background-image: url('images/halya.jpg');">
+      Halya
+    </a>
+  </div>
+
+  <!-- Projects Column -->
+  <div class="column">
+    <h2>Projects</h2>
+    <a href="portfolio-website.html" class="project-button" style="background-image: url('images/portfolio-website.jpg');">
+      Portfolio Website
+    </a>
+    <a href="drone.html" class="project-button" style="background-image: url('images/drone.jpg');">
+      Drone
+    </a>
+    <a href="computer.html" class="project-button" style="background-image: url('images/computer.jpg');">
+      Computer
+    </a>
+    <a href="sumo-robot.html" class="project-button" style="background-image: url('images/sumo-robot.jpg');">
+      Sumo Robot
+    </a>
+  </div>
+</div>
+
+<!-- Footer will be loaded here -->
+<div id="footer-container"></div>
 
 </body>
 </html>
