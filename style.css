@@ -225,18 +225,24 @@ footer a:hover {
   margin-bottom: 10px;
 }
 
-/* Gallery: rows of 3 fixed-size images */
 .project-gallery {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
-  margin-top: 30px;
   justify-content: space-between;
+  gap: 0; /* We'll control spacing with margins */
+  margin-top: 30px;
 }
 
+/* 3 images per row: (3 × 280px) + (2 × 30px spacing) = 900px */
 .project-gallery img {
-  width: 280px;               /* 3 x 280px + 2 x 20px gap = 900px total */
-  height: 210px;              /* maintain 4:3 aspect ratio */
+  width: 280px;
+  height: 210px;
   object-fit: cover;
   border-radius: 6px;
+  margin-bottom: 30px;
+}
+
+/* spacing between images — only on first two in each row */
+.project-gallery img:not(:nth-child(3n)) {
+  margin-right: 30px;
 }
