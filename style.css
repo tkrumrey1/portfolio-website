@@ -2,9 +2,19 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: #000;      /* Black background */
-  color: #d3d3d3;              /* Light gray text */
+  background-color: #000;
+  color: #d3d3d3;
   font-family: Arial, sans-serif;
+  min-width: 1000px;
+}
+
+/* Page container for consistent 1000px layout */
+.page-container,
+.project-page-container,
+.project-content,
+.columns {
+  width: 1000px;
+  margin: 0 auto;
 }
 
 /* Navigation */
@@ -14,7 +24,7 @@ nav ul {
   justify-content: center;
   padding: 10px 0;
   margin: 0;
-  background-color: #000;      /* Same color as the page background */
+  background-color: #000;
 }
 nav ul li {
   position: relative;
@@ -31,7 +41,7 @@ nav ul li a:hover {
   background-color: #222;
 }
 
-/* Dropdown content (vertical stack) */
+/* Dropdown menu */
 .dropdown-content {
   display: none;
   position: absolute;
@@ -53,12 +63,11 @@ nav ul li a:hover {
 .dropdown-content a:hover {
   background-color: #444;
 }
-/* Show on hover */
 .dropdown:hover .dropdown-content {
   display: flex;
 }
 
-/* Hero banner */
+/* Hero section */
 .hero {
   text-align: center;
   padding: 60px 20px;
@@ -81,25 +90,20 @@ nav ul li a:hover {
   margin: 0 auto 30px;
 }
 
-/* Columns container using grid */
+/* Columns grid layout */
 .columns {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  width: 960px;
-  margin: 0 auto;
   padding: 20px;
-  min-height: calc(100vh - 250px); /* full page minus header + hero + footer estimate */
+  min-height: calc(100vh - 250px);
   position: relative;
 }
 
-/* Individual column */
 .column {
   padding: 0 20px;
   text-align: center;
   position: relative;
 }
-
-/* Vertical dividers between columns */
 .column:not(:last-child)::after {
   content: '';
   position: absolute;
@@ -109,9 +113,6 @@ nav ul li a:hover {
   height: 100%;
   background-color: #444;
 }
-
-
-/* Column titles */
 .column h2 {
   margin-top: 0;
   font-size: 1.8em;
@@ -121,10 +122,10 @@ nav ul li a:hover {
 /* Project buttons */
 .project-button {
   display: flex;
-  justify-content: center;      /* Horizontally centers the text */
-  align-items: center;          /* Vertically centers the text */
-  width: 240px;                 /* Fixed width */
-  height: 180px;                /* Fixed height */
+  justify-content: center;
+  align-items: center;
+  width: 240px;
+  height: 180px;
   margin: 16px auto;
   background-color: #444;
   background-size: cover;
@@ -132,18 +133,14 @@ nav ul li a:hover {
   color: #fff;
   border: none;
   border-radius: 8px;
-  font-size: 2em;                /* Larger text */
+  font-size: 2em;
   font-weight: bold;
   text-align: center;
   cursor: pointer;
   transition: filter 0.3s ease;
   padding: 10px;
   text-decoration: none;
-  line-height: 1.2;              /* Ensure text is well spaced */
-}
-
-/* Greyscale effect and hover transition */
-.project-button {
+  line-height: 1.2;
   filter: grayscale(100%);
 }
 .project-button:hover {
@@ -165,16 +162,14 @@ footer a:hover {
   color: #fff;
 }
 
-/* Project Hero Section */
+/* Project hero image */
 .project-hero {
-  position: relative;
-  width: 100%;
-  height: 300px;
+  width: 1000px;
+  aspect-ratio: 4 / 3;
   overflow: hidden;
   border-radius: 8px;
-  margin-bottom: 40px;
+  margin: 40px auto 20px;
 }
-
 .project-hero-img {
   width: 100%;
   height: 100%;
@@ -182,39 +177,25 @@ footer a:hover {
   display: block;
 }
 
-.project-title {
-  position: absolute;
-  bottom: 20px;
-  left: 20px;
-  font-size: 2.8em;
-  color: #fff;
-  margin: 0;
-  text-shadow: 0 0 10px rgba(0,0,0,0.6);
-}
-/*
+/* Project title below the image */
 .project-title {
   font-size: 2.8em;
   color: #fff;
-  margin: 0;
+  margin: 0 auto 40px;
+  text-align: left;
+  width: 1000px;
 }
-*/
 
-/* Project Content */
+/* Project content */
 .project-content {
-  max-width: 960px;
-  margin: 40px auto;
   padding: 0 20px;
-  background-color: #000;
-  color: #d3d3d3;
 }
-
 .project-content h2 {
   font-size: 1.5em;
   margin-top: 30px;
   border-bottom: 1px solid #444;
   padding-bottom: 5px;
 }
-
 .project-bullets {
   margin: 20px 0;
   padding-left: 20px;
@@ -223,10 +204,10 @@ footer a:hover {
   margin-bottom: 10px;
 }
 
-/* Image Gallery */
+/* Project gallery */
 .project-gallery {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 20px;
   margin-top: 30px;
 }
