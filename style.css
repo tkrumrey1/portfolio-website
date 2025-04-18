@@ -88,17 +88,27 @@ nav ul li a:hover {
   margin: 0 auto;
   padding: 20px;
   width: 960px;  /* Fixed width for columns */
+  position: relative;
 }
 
 /* Individual column */
 .column {
+  position: relative;
   width: 300px;  /* Fixed width for each column */
   padding: 0 20px;
   text-align: center;
   margin-bottom: 20px;
 }
-.column + .column {
-  border-left: 1px solid #444; /* vertical separator */
+
+/* Vertical bar using pseudo-element */
+.column:not(:first-child)::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 1px;
+  background-color: #444;
 }
 
 /* Column titles */
