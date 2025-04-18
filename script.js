@@ -1,18 +1,12 @@
-document.addEventListener('DOMContentLoaded', function(){
-  var dropdowns = document.querySelectorAll('.dropdown');
-
-  dropdowns.forEach(function(dropdown) {
-    dropdown.addEventListener('mouseover', function(){
-      var dropdownContent = this.querySelector('.dropdown-content');
-      if (dropdownContent) {
-        dropdownContent.style.display = 'block';
-      }
+document.addEventListener('DOMContentLoaded', function() {
+  document.querySelectorAll('.dropdown').forEach(dropdown => {
+    dropdown.addEventListener('mouseover', () => {
+      const menu = dropdown.querySelector('.dropdown-content');
+      menu.style.display = 'flex';
     });
-    dropdown.addEventListener('mouseout', function(){
-      var dropdownContent = this.querySelector('.dropdown-content');
-      if (dropdownContent) {
-        dropdownContent.style.display = 'none';
-      }
+    dropdown.addEventListener('mouseout', () => {
+      const menu = dropdown.querySelector('.dropdown-content');
+      menu.style.display = 'none';
     });
   });
 });
