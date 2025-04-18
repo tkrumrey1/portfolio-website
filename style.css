@@ -166,14 +166,23 @@ footer a:hover {
   color: #fff;
 }
 
-/* Project Hero Section */
+/* Page wrapper: fixed column and min width */
+.project-page-container {
+  max-width: 900px;
+  min-width: 900px;              /* prevent page from shrinking too small */
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Hero image with 4:3 ratio */
 .project-hero {
-  position: relative;
   width: 100%;
-  height: 300px;
+  aspect-ratio: 4 / 3;
   overflow: hidden;
   border-radius: 8px;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 
 .project-hero-img {
@@ -183,22 +192,13 @@ footer a:hover {
   display: block;
 }
 
+/* Title below image */
 .project-title {
-  position: absolute;
-  bottom: 20px;
-  left: 20px;
-  font-size: 2.8em;
+  font-size: 2.5em;
+  margin: 0 0 30px;
+  text-align: left;
   color: #fff;
-  margin: 0;
-  text-shadow: 0 0 10px rgba(0,0,0,0.6);
 }
-/*
-.project-title {
-  font-size: 2.8em;
-  color: #fff;
-  margin: 0;
-}
-*/
 
 /* Project Content */
 .project-content {
