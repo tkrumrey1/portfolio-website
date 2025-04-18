@@ -246,3 +246,7 @@ footer a:hover {
 .project-gallery img:not(:nth-child(3n)) {
   margin-right: 30px;
 }
+
+.project-gallery {
+  outline: 1px dashed red;
+}
