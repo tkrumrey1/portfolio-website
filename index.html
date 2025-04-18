@@ -1,69 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio - Home</title>
-  <link rel="stylesheet" href="style.css">
-  <script src="script.js" defer></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=1000" />
+  <title>Project Title</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-<!-- Header will be injected here -->
-<div id="header-container"></div>
+  <div class="page-container">
+    <header>
+      <h1>Name</h1>
+      <h2>Subtitle</h2>
+      <!-- Same navigation menu as home page -->
+    </header>
 
-<!-- Hero Section -->
-<div class="hero">
-  <h1>Trevor Krumrey</h1>
-  <p class="subtitle">Aerospace Engineering Student at UCSD</p>
-  <p class="subsubtitle">Experience: Rocketry, Structures, Machining, Composites, Electromechanical System Design</p>
-</div>
+    <div class="project-hero">
+      <img src="images/project-banner.jpg" alt="Banner" class="project-hero-img" />
+    </div>
 
+    <h1 class="project-title">Project Title</h1>
 
-  <!-- Divider Line -->
-  <div class="divider"></div>
+    <main class="project-content">
+      <h2>Description</h2>
+      <p>Details about the project...</p>
 
-<!-- Columns Section -->
-<div class="columns">
-  <!-- Internships Column -->
-  <div class="column">
-    <h2>Internships</h2>
-    <a href="tarlow-design.html" class="project-button" style="background-image: url('project1.jpg');">
-      Tarlow Design
-    </a>
-    <a href="sigma-engineering.html" class="project-button" style="background-image: url('images/sigma-engineering.jpg');">
-      Sigma Engineering
-    </a>
+      <h2>Status</h2>
+      <p>Complete / In Progress</p>
+
+      <h2>Date</h2>
+      <p>April 2025</p>
+
+      <ul class="project-bullets">
+        <li>Contribution</li>
+        <li>Skills Used</li>
+        <li>Key Outcomes</li>
+      </ul>
+
+      <div class="project-gallery">
+        <img src="images/img1.jpg" alt="Gallery 1" />
+        <img src="images/img2.jpg" alt="Gallery 2" />
+        <img src="images/img3.jpg" alt="Gallery 3" />
+        <img src="images/img4.jpg" alt="Gallery 4" />
+        <img src="images/img5.jpg" alt="Gallery 5" />
+        <img src="images/img6.jpg" alt="Gallery 6" />
+      </div>
+    </main>
   </div>
-
-  <!-- Rocketry Column -->
-  <div class="column">
-    <h2>Rocketry</h2>
-    <a href="halya.html" class="project-button" style="background-image: url('images/halya.jpg');">
-      Halya
-    </a>
-  </div>
-
-  <!-- Projects Column -->
-  <div class="column">
-    <h2>Projects</h2>
-    <a href="portfolio-website.html" class="project-button" style="background-image: url('images/portfolio-website.jpg');">
-      Portfolio Website
-    </a>
-    <a href="drone.html" class="project-button" style="background-image: url('images/drone.jpg');">
-      Drone
-    </a>
-    <a href="computer.html" class="project-button" style="background-image: url('images/computer.jpg');">
-      Computer
-    </a>
-    <a href="sumo-robot.html" class="project-button" style="background-image: url('images/sumo-robot.jpg');">
-      Sumo Robot
-    </a>
-  </div>
-</div>
-
-<!-- Footer will be loaded here -->
-<div id="footer-container"></div>
 
 </body>
 </html>
