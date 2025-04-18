@@ -19,6 +19,7 @@ nav ul {
 nav ul li {
   position: relative;
   margin: 0 15px;
+  padding-bottom: 20px;
 }
 nav ul li a {
   color: #d3d3d3;
@@ -34,7 +35,7 @@ nav ul li a:hover {
 .dropdown-content {
   display: none;
   position: absolute;
-  top: calc(100% + 12px);   /* 12px lower than the bottom of the link */
+  top: 100%;
   left: 0;
   background-color: #222;
   border: 1px solid #444;
@@ -42,6 +43,9 @@ nav ul li a:hover {
   min-width: 140px;
   z-index: 10;
   flex-direction: column;
+
+  padding: 10px; /* buffer around links */
+  margin-top: -10px; /* counteract the padding so it stays aligned */
 }
 .dropdown-content a {
   display: block;
