@@ -1,4 +1,4 @@
-/* Base page structure */
+/* ========== Base Layout ========== */
 body {
   margin: 0;
   font-family: Arial, sans-serif;
@@ -13,7 +13,7 @@ body {
   padding: 20px;
 }
 
-/* Navigation */
+/* ========== Navigation ========== */
 nav {
   margin-bottom: 20px;
 }
@@ -56,7 +56,7 @@ nav {
   display: block;
 }
 
-/* Hero Title Banner */
+/* ========== Home Page: Hero Banner ========== */
 .hero {
   text-align: center;
   margin: 40px 0 20px;
@@ -86,7 +86,7 @@ nav {
   margin: 0 auto 40px;
 }
 
-/* Columns Layout */
+/* ========== Home Page: Columns ========== */
 .columns {
   display: flex;
   justify-content: space-between;
@@ -103,8 +103,9 @@ nav {
   margin-bottom: 20px;
 }
 
-/* Grey Button Style */
-.button-link {
+/* ========== Shared: Grey Buttons ========== */
+.button-link,
+.project-button {
   display: block;
   background-color: #444;
   color: #fff;
@@ -115,8 +116,69 @@ nav {
   margin: 10px auto;
   width: 80%;
   transition: background-color 0.2s ease;
+  text-align: center;
 }
 
-.button-link:hover {
+.button-link:hover,
+.project-button:hover {
   background-color: #666;
+}
+
+/* ========== Project Page: Hero Image ========== */
+.project-hero {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.project-hero-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* ========== Project Page: Title + Content ========== */
+.project-title {
+  font-size: 2.2em;
+  margin-bottom: 30px;
+  color: #fff;
+}
+
+.project-content h2 {
+  font-size: 1.4em;
+  margin-top: 30px;
+}
+
+.project-content p {
+  margin-top: 10px;
+}
+
+.project-bullets {
+  list-style-type: disc;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+/* ========== Project Gallery ========== */
+.project-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 0;
+  margin-top: 30px;
+}
+
+.project-gallery img {
+  width: 320px;          /* 3x images = 960px + 2x 20px margins = 1000px */
+  height: 240px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-bottom: 20px;
+}
+
+.project-gallery img:not(:nth-child(3n)) {
+  margin-right: 20px;
 }
