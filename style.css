@@ -213,7 +213,7 @@ footer a:hover {
 
 .project-gallery img {
   width: 100%;
-  aspect-ratio: 4 / 3;         /* Ensures 4:3 shape */
+  aspect-ratio: 4 / 3;
   object-fit: cover;
   border-radius: 12px;
   display: block;
