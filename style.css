@@ -1,13 +1,11 @@
-/* Base styles */
+/* Base & Layout */
 body {
   margin: 0;
   padding: 0;
-  background-color: #000;      /* Black background */
-  color: #d3d3d3;              /* Light gray text */
+  background-color: #000;
+  color: #d3d3d3;
   font-family: Arial, sans-serif;
 }
-
-/* Navigation */
 nav ul {
   list-style: none;
   display: flex;
@@ -25,20 +23,11 @@ nav ul li a {
   padding: 6px 12px;
   border-radius: 6px;
 }
-nav ul li a:hover {
-  background-color: #222;
-}
-
-/* Ensure the trigger is positioned relative */
-.dropdown {
-  position: relative;
-}
-
-/* Push dropdown further below the link */
+nav ul li a:hover { background-color: #222; }
 .dropdown-content {
   display: none;
   position: absolute;
-  top: calc(100% + 12px);   /* 12px lower than the bottom of the link */
+  top: calc(100% + 12px);
   left: 0;
   background-color: #222;
   border: 1px solid #444;
@@ -47,87 +36,36 @@ nav ul li a:hover {
   z-index: 10;
   flex-direction: column;
 }
-
-/* Menu items */
 .dropdown-content a {
-  display: block;
   padding: 8px 12px;
+  display: block;
   color: #d3d3d3;
   text-decoration: none;
 }
-.dropdown-content a:hover {
-  background-color: #444;
-}
-
-/* Show on hover */
-.dropdown:hover .dropdown-content {
-  display: flex;
-}
-
-/* Hero banner */
-.hero {
-  text-align: center;
-  padding: 60px 20px;
-}
-.hero h1 {
-  margin: 0;
-  font-size: 3em;
-}
-.hero p {
-  margin: 10px 0 0;
-  font-size: 1.5em;
-  color: #aaa;
-}
-
-/* Divider */
-.divider {
-  border: none;
-  border-top: 1px solid #444;
-  width: 80%;
-  margin: 0 auto 30px;
-}
-
-/* Columns container */
-.columns {
-  display: flex;
-  flex-wrap: nowrap;
-}
-
-/* Individual column */
-.column {
-  flex: 1;
-  padding: 0 20px;
-  text-align: center;
-}
-.column + .column {
-  border-left: 1px solid #444; /* vertical separator */
-}
-
-/* Column titles */
-.column h2 {
-  margin-top: 0;
-  font-size: 1.8em;
-}
-
-/* Project buttons */
+.dropdown-content a:hover { background-color: #444; }
+.dropdown:hover .dropdown-content { display: flex; }
+.hero { text-align: center; padding: 60px 20px; }
+.hero h1 { margin: 0; font-size: 3em; }
+.hero p { margin: 10px 0 0; font-size: 1.5em; color: #aaa; }
+.divider { border: none; border-top: 1px solid #444; width: 80%; margin: 0 auto 30px; }
+.columns { display: flex; }
+.column { flex: 1; padding: 0 20px; text-align: center; }
+.column + .column { border-left: 1px solid #444; }
+.column h2 { margin-top: 0; font-size: 1.8em; }
 .project-button {
-  /* common button styles */
   display: block;
   width: 80%;
   aspect-ratio: 4/3;
   margin: 16px auto;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
   background-size: cover;
   background-position: center;
-
-  /* make the image greyscale by default */
   filter: grayscale(100%);
   transition: filter 0.3s ease;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #fff;
+  cursor: pointer;
 }
-
-.project-button:hover {
-  /* full color on hover */
-  filter: grayscale(0%);
-}
+.project-button:hover { filter: grayscale(0%); }
