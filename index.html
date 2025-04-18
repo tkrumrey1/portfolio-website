@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=1000" />
-  <title>Project Title</title>
+  <title>Portfolio - Home</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -12,38 +12,55 @@
     <header>
       <h1>Name</h1>
       <h2>Subtitle</h2>
-      <!-- Same navigation menu as home page -->
+      <nav>
+        <ul class="nav-menu">
+          <li><a href="index.html">Home</a></li>
+          <li class="dropdown">
+            <a href="#">Internships</a>
+            <ul class="dropdown-content">
+              <li><a href="tarlow-design.html">Tarlow Design</a></li>
+              <li><a href="sigma-engineering.html">Sigma Engineering</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="#">Rocketry</a>
+            <ul class="dropdown-content">
+              <li><a href="halya.html">Halya</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="#">Projects</a>
+            <ul class="dropdown-content">
+              <li><a href="portfolio-website.html">Portfolio Website</a></li>
+              <li><a href="drone.html">Drone</a></li>
+              <li><a href="computer.html">Computer</a></li>
+              <li><a href="sumo-robot.html">Sumo Robot</a></li>
+            </ul>
+          </li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <hr class="section-divider" />
     </header>
 
-    <div class="project-hero">
-      <img src="images/project-banner.jpg" alt="Banner" class="project-hero-img" />
-    </div>
-
-    <h1 class="project-title">Project Title</h1>
-
-    <main class="project-content">
-      <h2>Description</h2>
-      <p>Details about the project...</p>
-
-      <h2>Status</h2>
-      <p>Complete / In Progress</p>
-
-      <h2>Date</h2>
-      <p>April 2025</p>
-
-      <ul class="project-bullets">
-        <li>Contribution</li>
-        <li>Skills Used</li>
-        <li>Key Outcomes</li>
-      </ul>
-
-      <div class="project-gallery">
-        <img src="images/img1.jpg" alt="Gallery 1" />
-        <img src="images/img2.jpg" alt="Gallery 2" />
-        <img src="images/img3.jpg" alt="Gallery 3" />
-        <img src="images/img4.jpg" alt="Gallery 4" />
-        <img src="images/img5.jpg" alt="Gallery 5" />
-        <img src="images/img6.jpg" alt="Gallery 6" />
+    <main>
+      <div class="columns">
+        <div class="column">
+          <h3>Internships</h3>
+          <a href="tarlow-design.html" class="project-button" style="background-image: url('images/tarlow.jpg')">Tarlow Design</a>
+          <a href="sigma-engineering.html" class="project-button" style="background-image: url('images/sigma.jpg')">Sigma Engineering</a>
+        </div>
+        <div class="column">
+          <h3>Rocketry</h3>
+          <a href="halya.html" class="project-button" style="background-image: url('images/halya.jpg')">Halya</a>
+        </div>
+        <div class="column">
+          <h3>Projects</h3>
+          <a href="portfolio-website.html" class="project-button" style="background-image: url('images/portfolio.jpg')">Portfolio Website</a>
+          <a href="drone.html" class="project-button" style="background-image: url('images/drone.jpg')">Drone</a>
+          <a href="computer.html" class="project-button" style="background-image: url('images/computer.jpg')">Computer</a>
+          <a href="sumo-robot.html" class="project-button" style="background-image: url('images/sumo.jpg')">Sumo Robot</a>
+        </div>
       </div>
     </main>
   </div>
