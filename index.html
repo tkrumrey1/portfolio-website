@@ -2,98 +2,74 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Portfolio Home</title>
+  <title>Home - Portfolio</title>
   <link rel="stylesheet" href="style.css">
-  <style>
-    .columns {
-      display: flex;
-      justify-content: center;
-      gap: 40px;
-      padding: 20px;
-    }
-
-    .column {
-      width: 300px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 20px;
-    }
-
-    .project-button {
-      width: 100%;
-      padding-top: 75%; /* 4:3 Aspect Ratio */
-      background-size: cover;
-      background-position: center;
-      filter: grayscale(100%);
-      transition: filter 0.3s ease;
-      border-radius: 10px;
-      border: none;
-      position: relative;
-      font-weight: bold;
-      font-size: 1.2rem;
-      color: white;
-    }
-
-    .project-button:hover {
-      filter: grayscale(0%);
-      cursor: pointer;
-    }
-
-    .project-button::before {
-      content: attr(class);
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      z-index: 2;
-      font-size: 1.2rem;
-      font-weight: bold;
-      color: white;
-      text-align: center;
-      padding: 10px;
-      background-color: rgba(0, 0, 0, 0.5);
-      border-radius: 8px;
-    }
-  </style>
 </head>
 <body>
   <header>
     <nav>
       <ul>
         <li><a href="index.html">Home</a></li>
+
+        <li class="dropdown">
+          <a href="#">Internships</a>
+          <div class="dropdown-content">
+            <a href="Tarlow%20Design.html">Tarlow Design</a>
+            <a href="Sigma%20Engineering.html">Sigma Engineering</a>
+          </div>
+        </li>
+
+        <li class="dropdown">
+          <a href="#">Rocketry</a>
+          <div class="dropdown-content">
+            <a href="Halya.html">Halya</a>
+          </div>
+        </li>
+
+        <li class="dropdown">
+          <a href="#">Projects</a>
+          <div class="dropdown-content">
+            <a href="Portfolio%20Website.html">Portfolio Website</a>
+            <a href="Drone.html">Drone</a>
+            <a href="Computer.html">Computer</a>
+            <a href="Sumo%20Robot.html">Sumo Robot</a>
+          </div>
+        </li>
+
         <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
+
     <div class="hero">
       <h1>Name</h1>
       <p>Subtitle</p>
     </div>
+
     <hr class="divider">
   </header>
 
   <main>
-    <div class="columns">
+    <div class="columns fixed-width">
       <!-- Internships Column -->
       <div class="column">
         <h2>Internships</h2>
-        <a href="Tarlow Design.html"><button class="project-button" style="background-image: url('images/tarlow.jpg');">Tarlow Design</button></a>
-        <a href="Sigma Engineering.html"><button class="project-button" style="background-image: url('images/sigma.jpg');">Sigma Engineering</button></a>
+        <a href="Tarlow%20Design.html" class="project-button" style="background-image: url('images/tarlow.jpg');">Tarlow Design</a>
+        <a href="Sigma%20Engineering.html" class="project-button" style="background-image: url('images/sigma.jpg');">Sigma Engineering</a>
       </div>
 
       <!-- Rocketry Column -->
       <div class="column">
         <h2>Rocketry</h2>
-        <a href="Halya.html"><button class="project-button" style="background-image: url('images/halya.jpg');">Halya</button></a>
+        <a href="Halya.html" class="project-button" style="background-image: url('images/halya.jpg');">Halya</a>
       </div>
 
       <!-- Projects Column -->
       <div class="column">
         <h2>Projects</h2>
-        <a href="Portfolio Website.html"><button class="project-button" style="background-image: url('images/portfolio.jpg');">Portfolio Website</button></a>
-        <a href="Drone.html"><button class="project-button" style="background-image: url('images/drone.jpg');">Drone</button></a>
-        <a href="Computer.html"><button class="project-button" style="background-image: url('images/computer.jpg');">Computer</button></a>
-        <a href="Sumo Robot.html"><button class="project-button" style="background-image: url('images/sumorobot.jpg');">Sumo Robot</button></a>
+        <a href="Portfolio%20Website.html" class="project-button" style="background-image: url('images/website.jpg');">Portfolio Website</a>
+        <a href="Drone.html" class="project-button" style="background-image: url('images/drone.jpg');">Drone</a>
+        <a href="Computer.html" class="project-button" style="background-image: url('images/computer.jpg');">Computer</a>
+        <a href="Sumo%20Robot.html" class="project-button" style="background-image: url('images/sumo.jpg');">Sumo Robot</a>
       </div>
     </div>
   </main>
