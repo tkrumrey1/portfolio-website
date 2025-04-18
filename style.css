@@ -96,7 +96,12 @@ nav ul li a:hover {
   padding: 0 20px;
   text-align: center;
   margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
+
+/* Make vertical separator lines extend to full height */
 .column + .column {
   border-left: 1px solid #444; /* vertical separator */
 }
@@ -110,10 +115,12 @@ nav ul li a:hover {
 
 /* Project buttons */
 .project-button {
-  display: block;
-  width: 80%;
-  aspect-ratio: 4 / 3;
-  margin: 16px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 200px;  /* Fixed height */
+  margin: 16px 0;
   background-color: #444;
   background-size: cover;
   background-position: center;
