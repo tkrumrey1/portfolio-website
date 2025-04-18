@@ -168,17 +168,36 @@ footer a:hover {
 /* Project Hero Section */
 .project-hero {
   position: relative;
-  background-color: #b19cd9; /* light purple */
+  width: 100%;
   height: 300px;
-  display: flex;
-  align-items: flex-end;
-  padding: 20px;
+  overflow: hidden;
+  border-radius: 8px;
+  margin-bottom: 40px;
 }
+
+.project-hero-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.project-title {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  font-size: 2.8em;
+  color: #fff;
+  margin: 0;
+  text-shadow: 0 0 10px rgba(0,0,0,0.6);
+}
+/*
 .project-title {
   font-size: 2.8em;
   color: #fff;
   margin: 0;
 }
+*/
 
 /* Project Content */
 .project-content {
