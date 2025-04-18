@@ -19,6 +19,7 @@ nav ul {
 nav ul li {
   position: relative;
   margin: 0 15px;
+  padding-bottom: 10px; /* Add this line */
 }
 nav ul li a {
   color: #d3d3d3;
