@@ -219,31 +219,3 @@ footer a:hover {
   border-radius: 12px;
   display: block;
 }
-
-/* Ensure no space around injected header */
-#header-container {
-  margin: 0;
-  padding: 0;
-}
-
-/* Tighten nav and its children */
-nav {
-  margin: 0;
-  padding: 0;
-}
-
-nav ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-nav ul li {
-  margin: 0;
-  padding: 0;
-}
-
-/* Remove top margin from hero */
-.hero {
-  margin-top: 0;
-}
