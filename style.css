@@ -70,17 +70,31 @@ nav ul li a:hover {
 
 /* Hero section */
 .hero {
+  position: relative;
   text-align: center;
   padding: 60px 20px;
-}
-.hero h1 {
   margin: 0;
-  font-size: 3em;
+  color: #fff;
+  background-image: url('images/hero-background.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 8px;
 }
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0, 0, 0, 0.5); /* translucent overlay */
+  border-radius: 8px;
+  z-index: 0;
+}
+
+.hero h1,
 .hero p {
-  margin: 10px 0 0;
-  font-size: 1.5em;
-  color: #aaa;
+  position: relative;
+  z-index: 1;
 }
 
 /* Divider */
