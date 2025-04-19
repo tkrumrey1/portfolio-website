@@ -77,17 +77,17 @@ nav ul li a:hover {
   padding-bottom: 70px;
   margin: 0;
   color: #fff;
-  background-image: url('images/hero-background.jpg');
+/*  background-image: url('images/hero-background.jpg');
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat; */
 }
-
+/*
 .hero::before {
   content: "";
   position: absolute;
   top: 0; left: 0; right: 0; bottom: 0;
-  background: rgba(0, 0, 0, 0.5); /* translucent overlay */
+  background: rgba(0, 0, 0, 0.5);
   border-radius: 8px;
   z-index: 0;
 }
@@ -97,7 +97,7 @@ nav ul li a:hover {
   position: relative;
   z-index: 1;
 }
-
+*/
 /* Divider */
 .divider {
   border: none;
