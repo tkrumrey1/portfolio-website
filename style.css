@@ -6,6 +6,7 @@ body {
   color: #d3d3d3;
   font-family: Arial, sans-serif;
   min-width: 1000px;
+  padding-top: 0;
 }
 
 /* Page container for consistent 1000px layout */
