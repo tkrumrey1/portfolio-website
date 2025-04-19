@@ -76,7 +76,6 @@ nav ul li a:hover {
   padding-bottom: 70px;
   margin: 0;
   color: #fff;
-/*  background-image: url('project1.jpeg'); */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -108,7 +107,7 @@ nav ul li a:hover {
 .columns {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-/*  padding: 20px; */
+  padding: 20px;
   min-height: calc(100vh - 250px);
   position: relative;
 }
