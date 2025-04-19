@@ -77,12 +77,12 @@ nav ul li a:hover {
   padding-bottom: 70px;
   margin: 0;
   color: #fff;
-/*  background-image: url('images/hero-background.jpg');
+  background-image: url('project1.jpeg');
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat; */
+  background-repeat: no-repeat;
 }
-/*
+
 .hero::before {
   content: "";
   position: absolute;
@@ -97,7 +97,7 @@ nav ul li a:hover {
   position: relative;
   z-index: 1;
 }
-*/
+
 /* Divider */
 .divider {
   border: none;
