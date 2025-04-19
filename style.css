@@ -2,11 +2,10 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: #000;
-  color: #d3d3d3;
+  background-color: #f0f0f0; /* Light grey background */
+  color: #333; /* Darker text color for better contrast */
   font-family: Arial, sans-serif;
   min-width: 1000px;
-  padding-top: 0;
 }
 
 /* Page container for consistent 1000px layout */
@@ -25,7 +24,7 @@ nav ul {
   justify-content: center;
   padding: 10px 0;
   margin: 0;
-  background-color: #000;
+  background-color: #333; /* Dark background for the nav */
   padding-top: 20px;
 }
 nav ul li {
@@ -34,13 +33,13 @@ nav ul li {
   padding-bottom: 20px;
 }
 nav ul li a {
-  color: #d3d3d3;
+  color: #fff; /* Light text on dark background */
   text-decoration: none;
   padding: 6px 12px;
   border-radius: 6px;
 }
 nav ul li a:hover {
-  background-color: #222;
+  background-color: #555; /* Slightly lighter on hover */
 }
 
 /* Dropdown menu */
@@ -59,7 +58,7 @@ nav ul li a:hover {
 .dropdown-content a {
   display: block;
   padding: 8px 12px;
-  color: #d3d3d3;
+  color: #fff;
   text-decoration: none;
 }
 .dropdown-content a:hover {
@@ -81,7 +80,6 @@ nav ul li a:hover {
   background-position: center;
   background-repeat: no-repeat;
   border-radius: 8px;
-  margin-top: 0;
 }
 
 .hero::before {
@@ -197,7 +195,7 @@ footer a:hover {
 /* Project title below the image */
 .project-title {
   font-size: 2.8em;
-  color: #fff;
+  color: #333; /* Dark text color for better readability */
   margin: 0 auto 40px;
   text-align: left;
   width: 1000px;
@@ -234,9 +232,4 @@ footer a:hover {
   object-fit: cover;
   border-radius: 12px;
   display: block;
-}
-
-#header-container {
-  margin-top: 0;
-  padding-top: 0;
 }
