@@ -81,6 +81,7 @@ nav ul li a:hover {
   background-position: center;
   background-repeat: no-repeat;
   border-radius: 8px;
+  margin-top: 0;
 }
 
 .hero::before {
