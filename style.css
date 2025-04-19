@@ -108,7 +108,7 @@ nav ul li a:hover {
 .columns {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  padding: 20px;
+/*  padding: 20px; */
   min-height: calc(100vh - 250px);
   position: relative;
 }
