@@ -234,3 +234,8 @@ footer a:hover {
   border-radius: 12px;
   display: block;
 }
+
+#header-container {
+  margin-top: 0;
+  padding-top: 0;
+}
