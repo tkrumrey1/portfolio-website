@@ -123,7 +123,7 @@ nav ul li a:hover {
   text-align: center;
   position: relative;
 }
-.column:not(:last-child)::after {
+.home-column:not(:last-child)::after {
   content: '';
   position: absolute;
   top: 0;
