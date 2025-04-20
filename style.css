@@ -99,10 +99,7 @@ nav ul li a:hover {
 .home-subsubtitle {
 
 }
-.home-column-title {
 
-}
-*/
 /* Divider */
 .divider {
   border: none;
@@ -133,12 +130,10 @@ nav ul li a:hover {
   width: 1px;
   height: 100%;
   background-color: #444;
-}/*
-.column h2 {
-  margin-top: 0;
-  font-size: 1.8em;
-  font-weight: bold;
-} */
+}
+.home-column-title {
+
+}
 
 /* Project buttons */
 .project-button {
