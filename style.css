@@ -88,13 +88,13 @@ nav ul li a:hover {
   background: rgba(0, 0, 0, 0.5);
   z-index: 0;
 }
-
+/*
 .hero h1,
 .hero p {
   position: relative;
   z-index: 1;
 }
-
+*/
 /* Divider */
 .divider {
   border: none;
@@ -125,12 +125,12 @@ nav ul li a:hover {
   width: 1px;
   height: 100%;
   background-color: #444;
-}
+}/*
 .column h2 {
   margin-top: 0;
   font-size: 1.8em;
   font-weight: bold;
-}
+} */
 
 /* Project buttons */
 .project-button {
@@ -202,12 +202,12 @@ footer a:hover {
 /* Project content */
 .project-content {
   padding: 0 0px;
-}
+}/*
 .project-content h2 {
   font-size: 1.5em;
   margin-top: 30px;
   padding-bottom: 5px;
-}
+} */
 .project-bullets {
   margin: 20px 0;
   padding-left: 20px;
