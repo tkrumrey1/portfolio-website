@@ -103,9 +103,8 @@ nav ul li a:hover {
 }
 .home-subsubtitle {
   margin: 10px 0px;
-  position: relative;
   color: #fff;
-  z-index: 2;
+  z-index: 1;
 }
 
 /* Divider */
