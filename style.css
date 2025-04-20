@@ -202,12 +202,27 @@ footer a:hover {
 /* Project content */
 .project-content {
   padding: 0 0px;
-}/*
+}
+.project-content h1 {
+  margin: 10px 0px;
+ /* font-family: 'Inter', sans-serif; */
+}
 .project-content h2 {
-  font-size: 1.5em;
-  margin-top: 30px;
-  padding-bottom: 5px;
-} */
+  margin: 10px 0px;
+}
+.project-content h3 {
+  margin: 10px 0px 15px;
+}
+.project-content p {
+  margin: 5px 0px;
+}
+.project-content hr {
+  margin: 30px 20px 20px;
+  height:2px;
+  border-width:0;
+  color:gray;
+  background-color:gray;
+}
 .project-bullets {
   margin: 20px 0;
   padding-left: 20px;
