@@ -12,7 +12,7 @@ body {
 .page-container,
 .project-page-container,
 .project-content,
-.columns {
+.home-columns {
   width: 1000px;
   margin: 0 auto;
 }
@@ -69,7 +69,7 @@ nav ul li a:hover {
 }
 
 /* Hero section */
-.hero {
+.home-hero {
   position: relative;
   text-align: center;
   padding: 60px 20px;
@@ -81,7 +81,7 @@ nav ul li a:hover {
   background-repeat: no-repeat;
 }
 
-.hero::before {
+.home-hero::before {
   content: "";
   position: absolute;
   top: 0; left: 0; right: 0; bottom: 0;
@@ -109,7 +109,7 @@ nav ul li a:hover {
 }
 
 /* Columns grid layout */
-.columns {
+.home-columns {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   padding: 20px;
@@ -117,7 +117,7 @@ nav ul li a:hover {
   position: relative;
 }
 
-.column {
+.home-column {
   padding: 0 20px;
   text-align: center;
   position: relative;
