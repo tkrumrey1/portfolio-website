@@ -90,14 +90,15 @@ nav ul li a:hover {
 }
 .home-title {
   font-size: 3em;
+  margin: 20px 0px;
   position: relative;
   z-index: 1;
 }
 .home-subtitle {
-
+  margin: 10px 0px;
 }
 .home-subsubtitle {
-
+  margin: 10px 0px;
 }
 
 /* Divider */
