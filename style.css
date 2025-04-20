@@ -165,7 +165,7 @@ nav ul li a:hover {
   padding: 10px;
   text-decoration: none;
   line-height: 1.2;
-  filter: grayscale(100%);
+  filter: grayscale(80%);
 }
 .project-button:hover {
   filter: grayscale(0%);
