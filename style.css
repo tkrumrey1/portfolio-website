@@ -148,9 +148,9 @@ nav ul li a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 340px;
-  height: 255px;
-  margin: 20px auto;
+  width: 320px;
+  height: 240px;
+  margin: 30px auto;
   background-color: #444;
   background-size: cover;
   background-position: center;
