@@ -103,6 +103,7 @@ nav ul li a:hover {
 }
 .home-subsubtitle {
   margin: 10px 0px;
+  position: relative;
   color: #fff;
   z-index: 1;
 }
