@@ -144,7 +144,7 @@ nav ul li a:hover {
   background-color: #444;
 }
 .home-column-title {
-  font-family: 'Orbitron', sans-serif;
+  font-family: 'Tomorrow', sans-serif;
 }
 
 /* Project buttons */
@@ -170,7 +170,7 @@ nav ul li a:hover {
   text-decoration: none;
   line-height: 1.2;
   filter: grayscale(80%);
-  font-family: 'Oxanium', sans-serif;
+  font-family: 'Orbitron', sans-serif;
 }
 .project-button:hover {
   filter: grayscale(0%);
@@ -213,7 +213,7 @@ footer a:hover {
   margin: 10px 0px;
   text-align: left;
   width: 1200px;
-  font-family: 'Oxanium', sans-serif;
+  font-family: 'Orbitron', sans-serif;
   font-weight: bold;
 }
 .project-content {
@@ -233,7 +233,7 @@ footer a:hover {
 }
 .project-description {
   margin: 5px 0px;
-  font-family: 'Tomorrow', sans-serif;
+  font-family: 'Oxanium', sans-serif;
 }
 .project-content hr {
   margin: 30px 20px 20px;
