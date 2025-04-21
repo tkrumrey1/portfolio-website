@@ -23,7 +23,7 @@ nav ul {
   display: flex;
   justify-content: center;
   margin: 0;
-  background-color: rgba(0,0,0,0);
+  background-color: rgba(0,0,0,1);
   padding-top: 20px;
   padding-bottom: 10px;
   font-family: 'Tomorrow', sans-serif;
@@ -76,7 +76,7 @@ nav ul li a:hover {
   padding: 60px 20px;
   padding-bottom: 70px;
   margin: 0;
-  background-color: rgba(0,0,0,0.95);
+  background-color: rgba(0,0,0,0.5);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -87,7 +87,7 @@ nav ul li a:hover {
   position: absolute;
   top: 0; left: 0; right: 0; bottom: 0;
   z-index: 0;
-  background-color: rgba(0, 0, 0, 0.95);
+  background-color: rgba(0, 0, 0, 0);
 }
 .home-title {
   font-size: 3em;
