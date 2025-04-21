@@ -23,7 +23,7 @@ nav ul {
   display: flex;
   justify-content: center;
   margin: 0;
-  background-color: black;
+  background-color: rgba(0,0,0,0.95);;
   padding-top: 20px;
   padding-bottom: 10px;
   font-family: 'Tomorrow', sans-serif;
