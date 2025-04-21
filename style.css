@@ -26,7 +26,7 @@ nav ul {
   background-color: rgba(0,0,0,1);
   padding-top: 20px;
   padding-bottom: 10px;
-  font-family: 'Oxanium', sans-serif;
+  font-family: 'Tomorrow', sans-serif;
 }
 nav ul li {
   position: relative;
@@ -144,7 +144,7 @@ nav ul li a:hover {
   background-color: #444;
 }
 .home-column-title {
-  font-family: 'Oxanium', sans-serif;
+  font-family: 'Tomorrow', sans-serif;
 }
 
 /* Project buttons */
