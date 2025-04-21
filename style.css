@@ -26,6 +26,7 @@ nav ul {
   background-color: black;
   padding-top: 20px;
   padding-bottom: 10px;
+  font-family: 'Inter', sans-serif;
 }
 nav ul li {
   position: relative;
@@ -177,6 +178,7 @@ footer {
   text-align: center;
   background-color: #111;
   color: #aaa;
+  font-family: 'Inter', sans-serif;
 }
 footer a {
   color: #d3d3d3;
