@@ -1,4 +1,4 @@
-/* Base styles */
+  /* Base styles */
 body {
   margin: 0;
   padding: 0;
@@ -166,7 +166,7 @@ nav ul li a:hover {
   text-align: center;
   cursor: pointer;
   transition: filter 0.3s ease;
-  padding: 20px;
+  padding: 10px;
   text-decoration: none;
   line-height: 1.2;
   filter: grayscale(80%);
