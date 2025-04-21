@@ -23,7 +23,7 @@ nav ul {
   display: flex;
   justify-content: center;
   margin: 0;
-  background-color: rgba(0,0,0,0.95);;
+  background-color: black;
   padding-top: 20px;
   padding-bottom: 10px;
   font-family: 'Tomorrow', sans-serif;
@@ -76,7 +76,7 @@ nav ul li a:hover {
   padding: 60px 20px;
   padding-bottom: 70px;
   margin: 0;
-  background: rgba(0, 0, 0, 0.9);
+  background-color: rgba(0, 0, 0, 0.95);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
