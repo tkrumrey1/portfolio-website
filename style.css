@@ -103,14 +103,14 @@ nav ul li a:hover {
   position: relative;
   color: #fff;
   z-index: 1;
-  font-family: 'Chakra Petch', sans-serif;
+  font-family: 'Tomorrow', sans-serif;
 }
 .home-subsubtitle {
   margin: 10px 0px;
   position: relative;
   color: #fff;
   z-index: 1;
-  font-family: 'Chakra Petch', sans-serif;
+  font-family: 'Tomorrow', sans-serif;
 }
 
 /* Divider */
@@ -227,11 +227,11 @@ footer a:hover {
 }
 .project-subtitle {
   margin: 10px 0px;
-  font-family: 'Chakra Petch', sans-serif;
+  font-family: 'Tomorrow', sans-serif;
 }
 .project-subsubtitle {
   margin: 10px 0px 15px;
-  font-family: 'Chakra Petch', sans-serif;
+  font-family: 'Tomorrow', sans-serif;
 }
 .project-description {
   margin: 5px 0px;
