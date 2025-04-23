@@ -257,3 +257,17 @@ footer a:hover {
   border-radius: 12px;
   display: block;
 }
+.big-project-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  margin: 15px 0px 30px;
+}
+
+.big-project-gallery img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: 12px;
+  display: block;
+}
