@@ -322,8 +322,19 @@ footer a:hover {
   left: 50%;
   width: 60px;
   height: 60px;
-  background: url('images/play-button.png') no-repeat center center;
-  background-size: contain;
+  background-color: rgba(255,255,255,0.8);
+  border-radius: 50%;
   transform: translate(-50%, -50%);
 }
-
+.play-icon::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-40%, -50%);
+  width: 0;
+  height: 0;
+  border-left: 20px solid black;
+  border-top: 12px solid transparent;
+  border-bottom: 12px solid transparent;
+}
