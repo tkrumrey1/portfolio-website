@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const content = document.getElementById('lightbox-content');
   const closeBtn = document.getElementById('lightbox-close');
 
-  // Handle photo click
+  // Handle photo clicks
   document.querySelectorAll('.lightbox-photo').forEach(img => {
     img.addEventListener('click', () => {
       content.innerHTML = `<img src="${img.src}" />`;
@@ -50,7 +50,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // Handle video thumbnail click
+  // Handle video thumbnail clicks
   document.querySelectorAll('.video-thumb').forEach(div => {
     div.addEventListener('click', () => {
       const videoId = div.getAttribute('data-video-id');
@@ -59,23 +59,22 @@ document.addEventListener('DOMContentLoaded', () => {
           src="https://www.youtube.com/embed/${videoId}?autoplay=1"
           frameborder="0"
           allow="autoplay; encrypted-media"
-          allowfullscreen
-        ></iframe>`;
+          allowfullscreen></iframe>`;
       lightbox.style.display = 'flex';
     });
   });
 
-  // Close lightbox
-  closeBtn.addEventListener('click', () => {
+  // Close logic
+  function closeLightbox() {
     lightbox.style.display = 'none';
     content.innerHTML = '';
-  });
+  }
 
-  // Close on background click
-  lightbox.addEventListener('click', (e) => {
-    if (e.target === lightbox) {
-      lightbox.style.display = 'none';
-      content.innerHTML = '';
-    }
+  closeBtn.addEventListener('click', closeLightbox);
+  lightbox.addEventListener('click', e => {
+    if (e.target === lightbox) closeLightbox();
+  });
+  document.addEventListener('keydown', e => {
+    if (e.key === 'Escape') closeLightbox();
   });
 });
