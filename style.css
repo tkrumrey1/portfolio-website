@@ -263,14 +263,7 @@ footer a:hover {
   border-radius: 12px;
   display: block;
 }
-.project-gallery video,
-.big-project-gallery video {
-  width: 100%;
-  aspect-ratio: 4 / 3;
-  object-fit: cover;
-  border-radius: 12px;
-  display: block;
-}
+
 /* Lightbox base */
 #lightbox {
   display: none;
