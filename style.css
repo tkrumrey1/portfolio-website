@@ -285,10 +285,13 @@ footer a:hover {
 }
 
 #lightbox-content img {
-  width: 80vw;
-  height: auto;
+  max-width: 80vw;
   max-height: 80vh;
+  width: auto;
+  height: auto;
+  object-fit: contain;
   border-radius: 12px;
+  display: block;
 }
 
 #lightbox-content iframe {
