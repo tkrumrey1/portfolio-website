@@ -361,7 +361,6 @@ footer a:hover {
 .contact-container form input[type="email"],
 .contact-container form textarea {
   width: 100%;
-  aspect-ratio: 3 / 1;
   padding: 10px 15px;
   border-radius: 8px;
   border: 1px solid #444;
@@ -372,6 +371,9 @@ footer a:hover {
   resize: vertical;
   margin: 15px auto 25px;
   box-sizing: border-box;
+}
+.contact-container form textarea {
+  aspect-ratio: 3 / 1;
 }
 .contact-container form button[type="submit"] {
   padding: 12px 20px;
