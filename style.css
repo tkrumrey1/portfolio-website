@@ -373,7 +373,7 @@ footer a:hover {
   box-sizing: border-box;
 }
 .contact-container form button[type="submit"] {
-  /* padding: 12px 20px; */
+  padding: 12px 20px;
   background-color: #555;
   color: white;
   border: none;
