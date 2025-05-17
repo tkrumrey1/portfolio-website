@@ -17,31 +17,30 @@
   <div id="header-container"></div>
   
   <main>
-    
-    <h1>Contact</h1>
 
-  <form action="https://formspree.io/f/xjkwllvz" method="POST">
-    <label>Name:</label>
-    <input type="text" name="name" required />
+    <div class="contact-container">
+      
+      <h1>Contact</h1>
   
-    <label>Email:</label>
-    <input type="email" name="email" required />
-  
-    <label>Message:</label>
-    <textarea name="message" required></textarea>
-  
-    <!-- Add a redirect URL (optional) 
-    <input type="hidden" name="_next" value="https://yourdomain.com/thank-you.html">
-    -->
-    
-    <!-- Basic spam protection -->
-    <input type="text" name="_gotcha" style="display:none">
-  
-    <button type="submit">Send</button>
-  </form>
+      <form action="https://formspree.io/f/xjkwllvz" method="POST">
+        <label>Name:</label>
+        <input type="text" name="name" required />
+        <label>Email:</label>
+        <input type="email" name="email" required />
+        <label>Message:</label>
+        <textarea name="message" required></textarea>
+        <!-- Add a redirect URL (optional) 
+        <input type="hidden" name="_next" value="https://yourdomain.com/thank-you.html">
+        -->
+        <!-- Basic spam protection -->
+        <input type="text" name="_gotcha" style="display:none">
+        <button type="submit">Send</button>
+      </form>
+      
+    </div>
     
   </main>
-
+  
   <!-- Injected footer -->
   <div id="footer-container"></div>
   
