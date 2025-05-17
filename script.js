@@ -92,8 +92,11 @@ document.querySelectorAll('.video-thumb').forEach(div => {
 document.addEventListener("DOMContentLoaded", function () {
   const form = document.querySelector(".contact-container form");
   const messageContainer = document.createElement("div");
-  messageContainer.style.marginTop = "20px";
+  messageContainer.style.marginTop = "15px";
   messageContainer.style.fontFamily = "'Tomorrow', sans-serif";
+  messageContainer.style.color = "#fff";
+  messageContainer.style.textAlign = "center";
+  messageContainer.style.width = "100%";
   form.appendChild(messageContainer);
 
   form.addEventListener("submit", function (e) {
