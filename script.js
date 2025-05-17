@@ -80,6 +80,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
 //automatically fill all videos with their thumbnails
 document.querySelectorAll('.video-thumb').forEach(div => {
+  if (div.dataset.staticThumb === "true") return; // Skip custom thumbs
+
   const videoId = div.dataset.videoId;
   div.style.backgroundImage = `url(https://img.youtube.com/vi/${videoId}/hqdefault.jpg)`;
 });
