@@ -80,10 +80,49 @@ document.addEventListener('keydown', e => {
 });
 });
 
-//automatically fill all videos with their thumbnails
+// Automatically fill all videos with their thumbnails
 document.querySelectorAll('.video-thumb').forEach(div => {
   if (div.hasAttribute('data-static-thumb')) return; // Skip custom thumbnails
 
   const videoId = div.dataset.videoId;
   div.style.backgroundImage = `url(https://img.youtube.com/vi/${videoId}/hqdefault.jpg)`;
+});
+
+// Contact form
+document.addEventListener("DOMContentLoaded", function () {
+  const form = document.querySelector(".contact-container form");
+  const messageContainer = document.createElement("div");
+  messageContainer.style.marginTop = "20px";
+  messageContainer.style.fontFamily = "'Tomorrow', sans-serif";
+  form.appendChild(messageContainer);
+
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    const formData = new FormData(form);
+
+    fetch(form.action, {
+      method: "POST",
+      body: formData,
+      headers: {
+        'Accept': 'application/json'
+      }
+    })
+      .then(response => {
+        if (response.ok) {
+          messageContainer.textContent = "Message sent!";
+          messageContainer.style.color = "#0f0";
+          form.reset(); // Clear form fields
+        } else {
+          return response.json().then(data => {
+            throw new Error(data.error || "Something went wrong.");
+          });
+        }
+      })
+      .catch(error => {
+        messageContainer.textContent = "Failed to send message.";
+        messageContainer.style.color = "#f00";
+        console.error(error);
+      });
+  });
 });
