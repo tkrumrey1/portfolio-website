@@ -372,9 +372,6 @@ footer a:hover {
   margin: 15px auto 25px;
   box-sizing: border-box;
 }
-.contact-container form input[name="message"] {
-  aspect-ratio: 3 / 1;
-}
 .contact-container form button[type="submit"] {
   padding: 12px 20px;
   background-color: #555;
