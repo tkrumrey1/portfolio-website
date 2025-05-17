@@ -335,3 +335,53 @@ footer a:hover {
   border-top: 12px solid transparent;
   border-bottom: 12px solid transparent;
 }
+
+/* Contact page */
+.contact-container {
+  width: 1200px;
+  margin: 40px auto;
+  padding: 20px;
+}
+.contact-container h1 {
+  text-align: center;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 2.5em;
+  margin-bottom: 40px;
+}
+.contact-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.contact-container form label {
+  text-align: left;
+  font-family: 'Tomorrow', sans-serif;
+  font-size: 1.1em;
+}
+.contact-container form input[type="text"],
+.contact-container form input[type="email"],
+.contact-container form textarea {
+  width: 100%;
+  padding: 10px 15px;
+  border-radius: 8px;
+  border: 1px solid #444;
+  background-color: #222;
+  color: #fff;
+  font-size: 1em;
+  font-family: 'Oxanium', sans-serif;
+  resize: vertical;
+}
+.contact-container form button[type="submit"] {
+  padding: 12px 20px;
+  background-color: #555;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1em;
+  font-family: 'Orbitron', sans-serif;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.contact-container form button[type="submit"]:hover {
+  background-color: #777;
+}
