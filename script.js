@@ -11,7 +11,6 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 });
 
-
 document.addEventListener("DOMContentLoaded", () => {
   // Load header
   fetch("header.html")
@@ -77,4 +76,10 @@ document.addEventListener('DOMContentLoaded', () => {
   document.addEventListener('keydown', e => {
     if (e.key === 'Escape') closeLightbox();
   });
+});
+
+//automatically fill all videos with their thumbnails
+document.querySelectorAll('.video-thumb').forEach(div => {
+  const videoId = div.dataset.videoId;
+  div.style.backgroundImage = `url(https://img.youtube.com/vi/${videoId}/hqdefault.jpg)`;
 });
