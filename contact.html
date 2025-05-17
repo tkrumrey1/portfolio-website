@@ -1,5 +1,7 @@
 <!DOCTYPE html>
+
 <html lang="en">
+  
 <head>
   <link href="https://fonts.googleapis.com/css2?family=Tomorrow&family=Orbitron&family=Oxanium&display=swap" rel="stylesheet">
   <meta charset="UTF-8">
@@ -8,20 +10,41 @@
   <link rel="stylesheet" href="style.css">
   <script src="script.js" defer></script>
 </head>
+  
 <body>
   
-  <!-- Header will be injected here -->
+  <!-- Injected header -->
   <div id="header-container"></div>
   
   <main>
     
-    <h1>Contact Me</h1>
-    <p>Feel free to email me at <a href="mailto:email@example.com">email@example.com</a>.</p>
+    <h1>Contact</h1>
+
+  <form action="https://formspree.io/f/yourFormID" method="POST">
+    <label>Name:</label>
+    <input type="text" name="name" required />
+  
+    <label>Email:</label>
+    <input type="email" name="email" required />
+  
+    <label>Message:</label>
+    <textarea name="message" required></textarea>
+  
+    <!-- Add a redirect URL (optional) 
+    <input type="hidden" name="_next" value="https://yourdomain.com/thank-you.html">
+    -->
+    
+    <!-- Basic spam protection -->
+    <input type="text" name="_gotcha" style="display:none">
+  
+    <button type="submit">Send</button>
+  </form>
     
   </main>
 
-  <!-- Footer will be loaded here -->
+  <!-- Injected footer -->
   <div id="footer-container"></div>
   
 </body>
+  
 </html>
