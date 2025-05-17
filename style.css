@@ -1,4 +1,4 @@
-  /* Base styles */
+/* Base styles */
 body {
   margin: 0;
   padding: 0;
@@ -8,7 +8,7 @@ body {
   min-width: 1200px;
 }
 
-/* Page container for consistent 1000px layout */
+/* Page container for consistent 1200px layout */
 .page-container,
 .project-page-container,
 .project-content,
@@ -34,7 +34,7 @@ nav ul li {
   padding-bottom: 10px;
 }
 nav ul li a {
-  color: #fff; /* Light text on dark background */
+  color: #fff;
   text-decoration: none;
   padding: 6px 12px;
   border-radius: 6px;
@@ -81,7 +81,6 @@ nav ul li a:hover {
   background-position: center;
   background-repeat: no-repeat;
 }
-
 .home-hero::before {
   content: "";
   position: absolute;
@@ -128,7 +127,6 @@ nav ul li a:hover {
   min-height: calc(100vh - 250px);
   position: relative;
 }
-
 .home-column {
   padding: 0;
   margin: 30px 0px;
@@ -193,7 +191,7 @@ footer a:hover {
   color: #fff;
 }
 
-/* Project hero image */
+/* Project page contents */
 .project-hero {
   width: 1200px;
   aspect-ratio: 8 / 3;
@@ -208,8 +206,6 @@ footer a:hover {
   display: block;
   cursor: pointer;
 }
-
-/* Project title below the image */
 .project-title {
   font-size: 2.5em;
   margin: 10px 0px;
@@ -266,7 +262,7 @@ footer a:hover {
   cursor: pointer;
 }
 
-/* Lightbox styles */
+/* Lightboxes */
 #lightbox {
   display: none;
   position: fixed;
@@ -277,13 +273,11 @@ footer a:hover {
   align-items: center;
   z-index: 9999;
 }
-
 #lightbox-content {
   position: relative;
   max-width: 90vw;
   max-height: 90vh;
 }
-
 #lightbox-content img {
   max-width: 80vw;
   max-height: 80vh;
@@ -293,14 +287,12 @@ footer a:hover {
   border-radius: 12px;
   display: block;
 }
-
 #lightbox-content iframe {
   width: 90vw;
   height: 50.625vw; /* 16:9 ratio */
   max-height: 80vh;
   border-radius: 12px;
 }
-
 #lightbox-close {
   position: fixed;
   top: 20px;
@@ -311,7 +303,7 @@ footer a:hover {
   z-index: 10000;
 }
 
-/* Video thumbnail style */
+/* Video thumbnails */
 .video-thumb {
   width: 100%;
   aspect-ratio: 4 / 3;
